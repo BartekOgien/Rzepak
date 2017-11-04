@@ -6,9 +6,5 @@ public class RapsRunner {
 
         RapsRun rapsRun = new RapsRun();
         rapsRun.Raps();
-
-
     }
-
-
 }

@@ -17,26 +17,26 @@ public class RapsFrame {
 
     public void createTextFields() {
         JTextField textHumidity=new JTextField();
-        textHumidity.setBounds(30,50, 50,25);
+        textHumidity.setBounds(30,50, 60,25);
         textHumidity.setText("");
         rapsFrame.add(textHumidity);
         textHum = textHumidity;
 
         JTextField textPollution=new JTextField();
-        textPollution.setBounds(30,140, 50,25);
+        textPollution.setBounds(30,140, 60,25);
         textPollution.setText("");
         rapsFrame.add(textPollution);
         textPol = textPollution;
 
         JTextField textPrice=new JTextField();
-        textPrice.setBounds(30,230, 50,25);
+        textPrice.setBounds(30,230, 60,25);
         textPrice.setText("");
         rapsFrame.add(textPrice);
         textPri = textPrice;
     }
 
     public void createLabels() {
-        JLabel labelHumidity = new JLabel("Wilgotnosc:");
+        JLabel labelHumidity = new JLabel("Wilgotność:");
         labelHumidity.setBounds(30, 20, 100, 40);
         rapsFrame.add(labelHumidity);
 
@@ -48,11 +48,11 @@ public class RapsFrame {
         labelPrice.setBounds(30, 200, 170, 40);
         rapsFrame.add(labelPrice);
 
-        JLabel labelPercentPrice = new JLabel("% ceny po potraceniach:");
+        JLabel labelPercentPrice = new JLabel("% ceny po potrąceniach:");
         labelPercentPrice.setBounds(30, 290, 170, 80);
         rapsFrame.add(labelPercentPrice);
 
-        JLabel labelPriceAfter = new JLabel("Cena po potraceniach:");
+        JLabel labelPriceAfter = new JLabel("Cena po potrąceniach:");
         labelPriceAfter.setBounds(30, 380, 170, 80);
         rapsFrame.add(labelPriceAfter);
 
@@ -68,7 +68,7 @@ public class RapsFrame {
 
     public JTextField createtextPrice() {
         JTextField textPriceAfter=new JTextField();
-        textPriceAfter.setBounds(30,340, 50,25);
+        textPriceAfter.setBounds(30,340, 60,25);
         textPriceAfter.setText("");
         textPriceAfter.setEditable(false);
         rapsFrame.add(textPriceAfter);
@@ -77,7 +77,7 @@ public class RapsFrame {
 
     public JTextField createtextPercentPriceD() {
         JTextField textPercentPricer=new JTextField();
-        textPercentPricer.setBounds(30,430, 50,25);
+        textPercentPricer.setBounds(30,430, 60,25);
         textPercentPricer.setText("");
         textPercentPricer.setEditable(false);
         rapsFrame.add(textPercentPricer);
