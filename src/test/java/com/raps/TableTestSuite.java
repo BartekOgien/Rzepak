@@ -1,5 +1,6 @@
 package com.raps;
 
+import com.raps.tables.Table;
 import org.junit.Assert;
 import org.junit.Test;
 

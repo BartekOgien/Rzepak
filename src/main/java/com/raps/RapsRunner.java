@@ -1,10 +1,12 @@
 package com.raps;
 
+import com.raps.frames.RapsRunFrame;
+
 public class RapsRunner {
 
     public static void main(String[] args) {
 
-        RapsRun rapsRun = new RapsRun();
+        RapsRunFrame rapsRun = new RapsRunFrame();
         rapsRun.Raps();
     }
 }

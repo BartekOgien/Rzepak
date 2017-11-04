@@ -1,4 +1,4 @@
-package com.raps;
+package com.raps.tables;
 
 import javax.swing.*;
 import java.math.BigDecimal;

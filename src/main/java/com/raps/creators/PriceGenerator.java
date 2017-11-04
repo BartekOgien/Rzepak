@@ -1,4 +1,6 @@
-package com.raps;
+package com.raps.creators;
+
+import com.raps.tables.Table;
 
 import javax.swing.*;
 import java.awt.*;

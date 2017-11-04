@@ -1,4 +1,4 @@
-package com.raps;
+package com.raps.creators;
 
 import javax.swing.*;
 
@@ -11,6 +11,15 @@ public class TextFieldCreator {
         textField.setBounds(x, y, TEXT_FIELD_WIDTH, TEXT_FIELD_HEIGHT);
         textField.setText("");
         rapsFrame.add(textField);
+        return textField;
+    }
+
+    public JTextField createCalculateText(JFrame jFrame, int y) {
+        JTextField textField=new JTextField();
+        textField.setBounds(LabelCreator.POSITION_X, y, TEXT_FIELD_WIDTH,TEXT_FIELD_HEIGHT);
+        textField.setText("");
+        textField.setEditable(false);
+        jFrame.add(textField);
         return textField;
     }
 }
