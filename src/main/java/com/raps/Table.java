@@ -1,5 +1,6 @@
 package com.raps;
 
+import javax.swing.*;
 import java.math.BigDecimal;
 
 public class Table {
@@ -54,5 +55,11 @@ public class Table {
         humidity = Math.round(humidity*10);
         pollution = Math.round(pollution*10);
         return parameters[((int)humidity)-60][((int)pollution)-1];
+    }
+
+    public void wrongParameters(JFrame jFrame) {
+        JOptionPane.showMessageDialog(jFrame, "Wilgotnosc lub zanieczyszczenie wykracza poza zakres tabeli \n" +
+                "Wilgotnosc powinna byc z przedzialu 6 - 15,5 \n" +
+                "Zanieczyszczenie 0,1 - 10,5");
     }
 }

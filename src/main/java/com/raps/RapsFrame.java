@@ -4,39 +4,17 @@ import javax.swing.*;
 
 public class RapsFrame {
     JFrame rapsFrame;
-    JTextField textHum;
-    JTextField textPol;
-    JTextField textPri;
 
 
     public RapsFrame() {
-        rapsFrame = new JFrame("Rzepak");//creating instance of JFrame
-        rapsFrame.setSize(400, 540);//400 width and 500 height
+        rapsFrame = new JFrame("Rzepak");
+        rapsFrame.setSize(400, 540);
 
     }
 
-    public void createTextFields() {
-        JTextField textHumidity=new JTextField();
-        textHumidity.setBounds(30,50, 60,25);
-        textHumidity.setText("");
-        rapsFrame.add(textHumidity);
-        textHum = textHumidity;
-
-        JTextField textPollution=new JTextField();
-        textPollution.setBounds(30,140, 60,25);
-        textPollution.setText("");
-        rapsFrame.add(textPollution);
-        textPol = textPollution;
-
-        JTextField textPrice=new JTextField();
-        textPrice.setBounds(30,230, 60,25);
-        textPrice.setText("");
-        rapsFrame.add(textPrice);
-        textPri = textPrice;
-    }
 
     public void createLabels() {
-        JLabel labelHumidity = new JLabel("Wilgotność:");
+        JLabel labelHumidity = new JLabel("Wilgotnosc:");
         labelHumidity.setBounds(30, 20, 100, 40);
         rapsFrame.add(labelHumidity);
 
@@ -52,18 +30,17 @@ public class RapsFrame {
         labelPercentPrice.setBounds(30, 290, 170, 80);
         rapsFrame.add(labelPercentPrice);
 
-        JLabel labelPriceAfter = new JLabel("Cena po potrąceniach:");
+        JLabel labelPriceAfter = new JLabel("Cena po potraceniach:");
         labelPriceAfter.setBounds(30, 380, 170, 80);
         rapsFrame.add(labelPriceAfter);
 
     }
 
     public JButton createButtons() {
-        JButton buttonWork = new JButton("Oblicz");//creating instance of JButton
+        JButton buttonWork = new JButton("Oblicz");
         buttonWork.setBounds(250, 330, 100, 40);
-        rapsFrame.add(buttonWork);//adding button in JFrame
+        rapsFrame.add(buttonWork);
         return buttonWork;
-
     }
 
     public JTextField createtextPrice() {
@@ -88,15 +65,4 @@ public class RapsFrame {
         return rapsFrame;
     }
 
-    public JTextField getTextHum() {
-        return textHum;
-    }
-
-    public JTextField getTextPol() {
-        return textPol;
-    }
-
-    public JTextField getTextPri() {
-        return textPri;
-    }
 }
